@@ -1,0 +1,35 @@
+.container {
+    width: 50%;
+    padding: 0.5em;
+}
+.video {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    transition: transform 250ms ease-in;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgba(191,191,191,0.56);
+}
+.video:hover {
+    transform: scale(1.02);
+}
+.thumnnail {
+    width: 40%;
+}
+.metadata {
+    margin: 0.5em;
+}
+.title{
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.channel {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}

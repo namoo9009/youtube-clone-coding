@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: 0.5em 1em;
+    background: black;
+    color: white;
+}
+.title {
+    margin: 0 0.5em 0 0.3em;
+}
+.search_box {
+    flex-basis: 100%;
+    display: flex;
+    height: 80%;
+}
+.input {
+    padding: 0.5rem;
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+}
+.input::placeholder {
+    opacity: 0.7;
+}
+.button {
+    width: 3.5rem;
+    outline: none;
+}
