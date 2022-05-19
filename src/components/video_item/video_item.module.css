@@ -1,6 +1,11 @@
 .container {
-    width: 50%;
     padding: 0.5em;
+}
+.container.grid {
+    width: 50%;
+}
+.container.lilst {
+    width: 100%;
 }
 .video {
     display: flex;
@@ -14,9 +19,10 @@
     transform: scale(1.02);
 }
 .thumnnail {
-    width: 40%;
+    flex: 1;
 }
 .metadata {
+    flex: 1;
     margin: 0.5em;
 }
 .title{

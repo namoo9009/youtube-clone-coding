@@ -3,19 +3,21 @@ import React, { useRef } from 'react';
 
 function SearchHeader({ onSearch }) {
     const inputRef = useRef();
+
     const handleSearch = () => {
         const value = inputRef.current.value;
         onSearch(value);
     };
+
     const onClick = () => {
         handleSearch();
     };
 
     const onKeyPress = (event) => {
         if(event.key === 'Enter') handleSearch();
-        
     };
-  return (
+    
+    return (
     <header className={styles.header}>
     <img className={styles.img} src="/images/img.png" width={40} alt="logo" />
     <h1 className={styles.title}>Youtube</h1>
@@ -29,8 +31,8 @@ function SearchHeader({ onSearch }) {
         {/* button은 input과 같이 쓰기 때문에 type을 submit으로 설정 */}
         <button className={styles.button} type='submit' onClick={onClick}>검색</button>
     </div>
-</header>
-  )
+    </header>
+    )
 }
 
 export default SearchHeader;
